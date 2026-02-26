@@ -5,10 +5,11 @@ const dishes = [
 ];
 
 export default function MarqueeStrip() {
-  const content = dishes.map((d) => `${d} · `).join('');
+  const content = dishes.map((d) => `${d}  ✦  `).join('');
   return (
-    <div className="bg-rust overflow-hidden py-4">
-      <div className="marquee-scroll whitespace-nowrap text-primary-foreground font-body font-semibold text-sm tracking-wider">
+    <div className="bg-rust overflow-hidden py-4 relative">
+      <div className="absolute inset-0 bg-gradient-to-r from-rust via-transparent to-rust z-10 pointer-events-none" />
+      <div className="marquee-scroll whitespace-nowrap text-primary-foreground/80 font-body font-semibold text-sm tracking-wider">
         <span>{content}</span>
         <span>{content}</span>
       </div>
