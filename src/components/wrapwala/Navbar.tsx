@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logo from '@/assets/wrapwala-logo.jpeg';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -25,16 +26,14 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-body ${
           scrolled
-            ? 'bg-warm-cream/95 backdrop-blur-md shadow-lg py-2'
-            : 'bg-transparent py-4'
+            ? 'bg-deep-brown/95 backdrop-blur-md shadow-lg py-2'
+            : 'bg-deep-brown/80 backdrop-blur-sm py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-          <a href="#home" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-rust flex items-center justify-center text-primary-foreground font-bold text-sm">
-              WW
-            </div>
-            <span className="font-display text-xl font-bold text-deep-brown">
+          <a href="#home" className="flex items-center gap-2.5">
+            <img src={logo} alt="WrapWala logo" className="w-[42px] h-[42px] rounded-full object-cover border-2 border-gold/30" />
+            <span className="font-display text-xl font-bold text-warm-cream">
               WrapWala
             </span>
           </a>
@@ -44,14 +43,14 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-deep-brown/80 hover:text-rust transition-colors"
+                className="text-sm font-medium text-warm-cream/70 hover:text-gold transition-colors"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#menu"
-              className="bg-rust text-primary-foreground px-5 py-2 rounded-full text-sm font-semibold hover:bg-rust/90 transition-colors"
+              className="bg-rust text-primary-foreground px-5 py-2 rounded-full text-sm font-semibold hover:bg-gold hover:text-deep-brown transition-all"
             >
               Order Now
             </a>
@@ -62,16 +61,16 @@ export default function Navbar() {
             className="lg:hidden flex flex-col gap-1.5"
             aria-label="Open menu"
           >
-            <span className="w-6 h-0.5 bg-deep-brown" />
-            <span className="w-6 h-0.5 bg-deep-brown" />
-            <span className="w-4 h-0.5 bg-deep-brown" />
+            <span className="w-6 h-0.5 bg-warm-cream" />
+            <span className="w-6 h-0.5 bg-warm-cream" />
+            <span className="w-4 h-0.5 bg-warm-cream" />
           </button>
         </div>
       </nav>
 
       {/* Mobile overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-[100] bg-deep-brown flex flex-col items-center justify-center gap-6 animate-fade-in">
+        <div className="fixed inset-0 z-[100] bg-deep-brown flex flex-col items-center justify-center gap-6">
           <button
             onClick={() => setMobileOpen(false)}
             className="absolute top-6 right-6 text-warm-cream text-3xl"
@@ -79,6 +78,7 @@ export default function Navbar() {
           >
             ✕
           </button>
+          <img src={logo} alt="WrapWala" className="w-20 h-20 rounded-full mb-4 border-2 border-gold/30" />
           {navLinks.map((link, i) => (
             <a
               key={link.href}
