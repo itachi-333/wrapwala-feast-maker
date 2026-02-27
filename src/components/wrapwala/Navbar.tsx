@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-import logo from '@/assets/wrapwala-logo.jpeg';
+// Note: When copying this back to your project, replace the line below with your original import:
+// import logo from '@/assets/wrapwala-logo.jpeg';
+const logo = 'https://placehold.co/400x400/3d1c00/f5a623?text=Logo';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -32,7 +34,8 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2.5">
-            <img src={logo} alt="WrapWala logo" className="w-[42px] h-[42px] rounded-full object-cover border-2 border-gold/30" />
+            {/* INCREASED DESKTOP LOGO SIZE HERE: Changed w-[42px] h-[42px] to w-16 h-16 (64px) */}
+            <img src={logo} alt="WrapWala logo" className="w-16 h-16 rounded-full object-cover border-2 border-gold/30" />
             <span className="font-display text-xl font-bold text-warm-cream">
               WrapWala
             </span>
@@ -78,7 +81,8 @@ export default function Navbar() {
           >
             ✕
           </button>
-          <img src={logo} alt="WrapWala" className="w-20 h-20 rounded-full mb-4 border-2 border-gold/30" />
+          {/* INCREASED MOBILE LOGO SIZE HERE: Changed w-20 h-20 to w-28 h-28 (112px) */}
+          <img src={logo} alt="WrapWala" className="w-28 h-28 rounded-full mb-4 border-2 border-gold/30 object-cover" />
           {navLinks.map((link, i) => (
             <a
               key={link.href}
