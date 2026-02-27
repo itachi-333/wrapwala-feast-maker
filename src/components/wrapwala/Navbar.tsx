@@ -35,7 +35,7 @@ export default function Navbar() {
            <img 
   src={logo} 
   alt="WrapWala logo" 
-  className="w-[64px] h-[64px] md:w-[72px] md:h-[72px] rounded-full object-cover border-2 border-gold/40 shadow-md"
+  className="h-16 md:h-20 w-auto object-contain"
 />
             <span className="font-display text-xl font-bold text-warm-cream">
               WrapWala
