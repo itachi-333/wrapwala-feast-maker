@@ -32,7 +32,11 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2.5">
-            <img src={logo} alt="WrapWala logo" className="w-[42px] h-[42px] rounded-full object-cover border-2 border-gold/30" />
+           <img 
+  src={logo} 
+  alt="WrapWala logo" 
+  className="w-[64px] h-[64px] md:w-[72px] md:h-[72px] rounded-full object-cover border-2 border-gold/40 shadow-md"
+/>
             <span className="font-display text-xl font-bold text-warm-cream">
               WrapWala
             </span>
