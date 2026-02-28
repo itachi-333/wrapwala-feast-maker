@@ -25,8 +25,8 @@ export default function GalleryBand() {
             alt={item.label}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-deep-brown/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-            <span className="text-warm-cream font-display font-bold text-lg text-center px-2">{item.label}</span>
+          <div className="absolute inset-0 bg-rust/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span className="text-primary-foreground font-display font-bold text-lg text-center px-2">{item.label}</span>
           </div>
         </div>
       ))}

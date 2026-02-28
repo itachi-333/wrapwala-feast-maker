@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-deep-brown/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-deep-brown/80 via-deep-brown/60 to-deep-brown/40" />
       </div>
 
       {/* Floating emojis */}
@@ -55,7 +55,7 @@ export default function Hero() {
             <span className="h-px w-12 bg-rust" />
           </div>
 
-          <p className="reveal-item text-warm-cream/60 text-lg max-w-md mb-8 font-body" data-delay="400">
+          <p className="reveal-item text-warm-cream/70 text-lg max-w-md mb-8 font-body" data-delay="400">
             London's favourite Indian-inspired street food. Bold flavours, fresh ingredients, and wraps made with love — from our cart to your hands.
           </p>
 

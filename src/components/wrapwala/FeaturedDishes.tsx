@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import heroWrap from '@/assets/hero-wrap.webp';
+import falafelWrap from '@/assets/falafel-wrap.webp';
+import chilliPaneerWrap from '@/assets/chilli-paneer-wrap.webp';
+import butterBlissWrap from '@/assets/butter-bliss-wrap.webp';
 import heroFries from '@/assets/hero-fries.webp';
-import heroBurger from '@/assets/hero-burger.webp';
-import galleryBhurji from '@/assets/gallery-bhurji.webp';
-import galleryMarination from '@/assets/gallery-marination.webp';
 
 interface Dish {
   name: string;
@@ -19,9 +19,9 @@ interface Dish {
 
 const dishes: Dish[] = [
   { name: 'OG Paneer Tikka Wrap', tag: 'Veg · Bestseller', tagColor: 'bg-olive/30 text-olive', desc: 'Cubes of paneer marinated in yogurt, kashmiri red chilli, ginger-garlic paste', price: '£7.00', meal: '£8.50', image: heroWrap, tall: true },
-  { name: 'Falafel Special', tag: 'Veg', tagColor: 'bg-olive/30 text-olive', desc: 'Crispy falafel with hummus, pickled onions & tahini', price: '£5.00', meal: '£6.50', image: galleryMarination },
-  { name: 'Chilli Paneer Wrap', tag: 'Veg · Popular', tagColor: 'bg-rust/30 text-rust', desc: 'Batter-fried paneer tossed in dark soy sauce, vinegar and green chilli glaze', price: '£7.00', meal: '£8.50', image: galleryBhurji },
-  { name: 'The Butter Bliss', tag: 'Chicken', tagColor: 'bg-gold/30 text-gold', desc: 'A creamy, mild butter chicken wrap', price: '£7.00', meal: '£8.50', image: heroBurger },
+  { name: 'Falafel Wrap', tag: 'Veg', tagColor: 'bg-olive/30 text-olive', desc: 'Crispy falafel with hummus, pickled onions & tahini', price: '£5.00', meal: '£6.50', image: falafelWrap },
+  { name: 'Chilli Paneer Wrap', tag: 'Veg · Popular', tagColor: 'bg-rust/30 text-rust', desc: 'Batter-fried paneer tossed in dark soy sauce, vinegar and green chilli glaze', price: '£7.00', meal: '£8.50', image: chilliPaneerWrap },
+  { name: 'The Butter Bliss', tag: 'Chicken', tagColor: 'bg-gold/30 text-deep-brown', desc: 'A creamy, mild butter chicken wrap', price: '£7.00', meal: '£8.50', image: butterBlissWrap },
   { name: 'Peri Peri Chicken Burger', tag: 'Popular', tagColor: 'bg-rust/30 text-rust', desc: 'Flame-grilled peri peri chicken with spicy mayo', price: '£4.50', meal: '£6.00', image: heroFries },
 ];
 
@@ -41,21 +41,21 @@ export default function FeaturedDishes() {
   };
 
   return (
-    <section id="dishes" className="py-20 bg-deep-brown">
+    <section id="dishes" className="py-20 bg-warm-cream">
       <div className="max-w-7xl mx-auto px-4" ref={ref}>
         <div className="text-center mb-12 reveal-item">
-          <span className="text-gold font-script text-lg">Fan Favourites</span>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-warm-cream mt-2">
+          <span className="text-rust font-script text-lg">Fan Favourites</span>
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-deep-brown mt-2">
             Our Most <span className="text-rust">Loved</span> Dishes
           </h2>
-          <p className="text-warm-cream/40 mt-3 max-w-md mx-auto">The dishes that keep London coming back for more</p>
+          <p className="text-deep-brown/50 mt-3 max-w-md mx-auto">The dishes that keep London coming back for more</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {dishes.map((dish, i) => (
             <div
               key={i}
-              className={`reveal-item group relative rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-black/50 hover:-translate-y-1 transition-all duration-300 cursor-pointer ${
+              className={`reveal-item group relative rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-rust/20 hover:-translate-y-1 transition-all duration-300 cursor-pointer ${
                 dish.tall ? 'md:row-span-2' : ''
               }`}
               data-delay={`${i * 100}`}

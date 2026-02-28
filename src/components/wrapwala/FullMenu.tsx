@@ -13,31 +13,27 @@ interface MenuItem {
   meal: string;
   emoji: string;
   note?: string;
-  colLabel?: string;
 }
 
 const menuItems: MenuItem[] = [
-  // Fries (Medium / Large)
-  { name: 'Plain/Masala Fries', cat: 'fries', badge: 'Veg', badgeColor: 'bg-olive/30 text-olive', desc: 'Classic or spiced — your call', price: '£2.00', meal: '£2.50', emoji: '🍟', colLabel: 'Medium / Large' },
-  { name: 'Cheesy Fries', cat: 'fries', badge: 'Veg', badgeColor: 'bg-olive/30 text-olive', desc: 'Loaded with melted cheese', price: '£2.50', meal: '£3.00', emoji: '🧀' },
-  { name: 'Loaded Fries', cat: 'fries', badge: 'Veg · Popular', badgeColor: 'bg-rust/30 text-rust', desc: 'The works — cheese, jalapeños, sauces', price: '£4.00', meal: '£4.50', emoji: '🍟' },
-  // Wraps (Single / Meal)
-  { name: 'Marinated Onion Egg Wrap', cat: 'wraps', badge: 'Egg', badgeColor: 'bg-gold/30 text-gold', desc: 'Egg wrap, marinated onion in lemon juice, fresh salad', price: '£5.00', meal: '£6.50', emoji: '🥚', note: 'Upgrade to Egg-Maha Roll +£1' },
-  { name: 'Falafel Special', cat: 'wraps', badge: 'Veg', badgeColor: 'bg-olive/30 text-olive', desc: 'Crispy falafel with hummus & tahini', price: '£5.00', meal: '£6.50', emoji: '🧆' },
-  { name: 'The OG Paneer Tikka Wrap', cat: 'wraps', badge: 'Veg · Bestseller', badgeColor: 'bg-olive/30 text-olive', desc: 'Cubes of paneer marinated in yogurt, kashmiri red chilli, ginger-garlic paste', price: '£7.00', meal: '£8.50', emoji: '🌯' },
-  { name: 'Achari Paneer Wrap', cat: 'wraps', badge: 'Veg', badgeColor: 'bg-olive/30 text-olive', desc: 'Paneer marinated in pickling spices and mango pickle oil', price: '£7.00', meal: '£8.50', emoji: '🫙' },
-  { name: 'Paneer Makhni (Butter) Wrap', cat: 'wraps', badge: 'Veg', badgeColor: 'bg-olive/30 text-olive', desc: 'Paneer, tomato makhni sauce, fresh cream, butter, onions, lettuce', price: '£7.00', meal: '£8.50', emoji: '🧈' },
-  { name: 'Chilli Paneer Wrap', cat: 'wraps', badge: 'Veg · Popular', badgeColor: 'bg-rust/30 text-rust', desc: 'Batter-fried paneer tossed in a dark soy sauce, vinegar and green chilli glaze', price: '£7.00', meal: '£8.50', emoji: '🌶️' },
-  { name: 'The Bhurji Blast', cat: 'wraps', badge: 'Veg', badgeColor: 'bg-olive/30 text-olive', desc: 'Fresh crumbled paneer, tadka with onion, green chilli, tomatoes', price: '£7.00', meal: '£8.50', emoji: '🥘' },
-  { name: 'The Achari Crunch', cat: 'wraps', badge: 'Chicken', badgeColor: 'bg-gold/30 text-gold', desc: 'Chicken with pickling spices and fresh salad', price: '£7.00', meal: '£8.50', emoji: '🍗', note: 'Upgrade to Egg-Maha Roll +£1' },
-  { name: 'The Butter Bliss', cat: 'wraps', badge: 'Chicken', badgeColor: 'bg-gold/30 text-gold', desc: 'A creamy, mild butter chicken wrap', price: '£7.00', meal: '£8.50', emoji: '🍗' },
-  { name: 'The Broadway Bhuna', cat: 'wraps', badge: 'Chicken', badgeColor: 'bg-gold/30 text-gold', desc: 'A rich, slow cooked chicken wrap', price: '£7.00', meal: '£8.50', emoji: '🍗' },
-  { name: 'Chicken/Lamb Kabab', cat: 'wraps', badge: 'Popular', badgeColor: 'bg-rust/30 text-rust', desc: 'Juicy seekh kabab in a warm wrap', price: '£6.50', meal: '£8.00', emoji: '🥩' },
-  // Burgers
-  { name: 'Peri Peri Chicken Burger', cat: 'burgers', badge: 'Popular', badgeColor: 'bg-rust/30 text-rust', desc: 'Flame-grilled with spicy peri peri', price: '£4.50', meal: '£6.00', emoji: '🍔' },
-  { name: 'Cheeseburger', cat: 'burgers', badge: 'Classic', badgeColor: 'bg-gold/30 text-gold', desc: 'Juicy beef patty with melted cheese', price: '£4.50', meal: '£6.00', emoji: '🍔' },
-  { name: 'Quarter Pounder', cat: 'burgers', badge: 'Popular', badgeColor: 'bg-rust/30 text-rust', desc: 'Thick-cut quarter pound beef patty', price: '£5.00', meal: '£6.50', emoji: '🍔' },
-  { name: 'Half Pounder', cat: 'burgers', badge: 'Beast Mode', badgeColor: 'bg-rust/30 text-rust', desc: 'For the truly hungry — half pound beef', price: '£6.00', meal: '£7.50', emoji: '🍔' },
+  { name: 'Plain/Masala Fries', cat: 'fries', badge: 'Veg', badgeColor: 'bg-olive/20 text-olive', desc: 'Classic or spiced — your call', price: '£2.00', meal: '£2.50', emoji: '🍟' },
+  { name: 'Cheesy Fries', cat: 'fries', badge: 'Veg', badgeColor: 'bg-olive/20 text-olive', desc: 'Loaded with melted cheese', price: '£2.50', meal: '£3.00', emoji: '🧀' },
+  { name: 'Loaded Fries', cat: 'fries', badge: 'Veg · Popular', badgeColor: 'bg-rust/20 text-rust', desc: 'The works — cheese, jalapeños, sauces', price: '£4.00', meal: '£4.50', emoji: '🍟' },
+  { name: 'Marinated Onion Egg Wrap', cat: 'wraps', badge: 'Egg', badgeColor: 'bg-gold/20 text-deep-brown', desc: 'Egg wrap, marinated onion in lemon juice, fresh salad', price: '£5.00', meal: '£6.50', emoji: '🥚', note: 'Upgrade to Egg-Maha Roll +£1' },
+  { name: 'Falafel Wrap', cat: 'wraps', badge: 'Veg', badgeColor: 'bg-olive/20 text-olive', desc: 'Crispy falafel with hummus & tahini', price: '£5.00', meal: '£6.50', emoji: '🧆' },
+  { name: 'The OG Paneer Tikka Wrap', cat: 'wraps', badge: 'Veg · Bestseller', badgeColor: 'bg-olive/20 text-olive', desc: 'Cubes of paneer marinated in yogurt, kashmiri red chilli, ginger-garlic paste', price: '£7.00', meal: '£8.50', emoji: '🌯' },
+  { name: 'Achari Paneer Wrap', cat: 'wraps', badge: 'Veg', badgeColor: 'bg-olive/20 text-olive', desc: 'Paneer marinated in pickling spices and mango pickle oil', price: '£7.00', meal: '£8.50', emoji: '🫙' },
+  { name: 'Paneer Makhni (Butter) Wrap', cat: 'wraps', badge: 'Veg', badgeColor: 'bg-olive/20 text-olive', desc: 'Paneer, tomato makhni sauce, fresh cream, butter, onions, lettuce', price: '£7.00', meal: '£8.50', emoji: '🧈' },
+  { name: 'Chilli Paneer Wrap', cat: 'wraps', badge: 'Veg · Popular', badgeColor: 'bg-rust/20 text-rust', desc: 'Batter-fried paneer tossed in a dark soy sauce, vinegar and green chilli glaze', price: '£7.00', meal: '£8.50', emoji: '🌶️' },
+  { name: 'The Bhurji Blast', cat: 'wraps', badge: 'Veg', badgeColor: 'bg-olive/20 text-olive', desc: 'Fresh crumbled paneer, tadka with onion, green chilli, tomatoes', price: '£7.00', meal: '£8.50', emoji: '🥘' },
+  { name: 'The Achari Crunch', cat: 'wraps', badge: 'Chicken', badgeColor: 'bg-gold/20 text-deep-brown', desc: 'Chicken with pickling spices and fresh salad', price: '£7.00', meal: '£8.50', emoji: '🍗', note: 'Upgrade to Egg-Maha Roll +£1' },
+  { name: 'The Butter Bliss', cat: 'wraps', badge: 'Chicken', badgeColor: 'bg-gold/20 text-deep-brown', desc: 'A creamy, mild butter chicken wrap', price: '£7.00', meal: '£8.50', emoji: '🍗' },
+  { name: 'The Broadway Bhuna', cat: 'wraps', badge: 'Chicken', badgeColor: 'bg-gold/20 text-deep-brown', desc: 'A rich, slow cooked chicken wrap', price: '£7.00', meal: '£8.50', emoji: '🍗' },
+  { name: 'Chicken/Lamb Kabab', cat: 'wraps', badge: 'Popular', badgeColor: 'bg-rust/20 text-rust', desc: 'Juicy seekh kabab in a warm wrap', price: '£6.50', meal: '£8.00', emoji: '🥩' },
+  { name: 'Peri Peri Chicken Burger', cat: 'burgers', badge: 'Popular', badgeColor: 'bg-rust/20 text-rust', desc: 'Flame-grilled with spicy peri peri', price: '£4.50', meal: '£6.00', emoji: '🍔' },
+  { name: 'Cheeseburger', cat: 'burgers', badge: 'Classic', badgeColor: 'bg-gold/20 text-deep-brown', desc: 'Juicy beef patty with melted cheese', price: '£4.50', meal: '£6.00', emoji: '🍔' },
+  { name: 'Quarter Pounder', cat: 'burgers', badge: 'Popular', badgeColor: 'bg-rust/20 text-rust', desc: 'Thick-cut quarter pound beef patty', price: '£5.00', meal: '£6.50', emoji: '🍔' },
+  { name: 'Half Pounder', cat: 'burgers', badge: 'Beast Mode', badgeColor: 'bg-rust/20 text-rust', desc: 'For the truly hungry — half pound beef', price: '£6.00', meal: '£7.50', emoji: '🍔' },
 ];
 
 const tabs: { label: string; value: Category }[] = [
@@ -54,7 +50,7 @@ export default function FullMenu() {
   const filtered = active === 'all' ? menuItems : menuItems.filter((m) => m.cat === active);
 
   return (
-    <section id="menu" className="py-20 bg-dark-surface">
+    <section id="menu" className="py-20 bg-deep-brown">
       <div className="max-w-7xl mx-auto px-4" ref={ref}>
         <div className="text-center mb-12 reveal-item">
           <span className="text-gold font-script text-lg">Everything We Serve</span>
