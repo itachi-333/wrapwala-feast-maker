@@ -35,7 +35,7 @@ export default function Navbar() {
             <img 
               src={logo} 
               alt="WrapWala logo" 
-              className="h-14 md:h-16 lg:h-18 w-auto object-contain"
+              className="h-16 md:h-20 lg:h-24 w-auto object-contain"
             />
             <div className="flex flex-col">
               <span className="font-display text-xl md:text-2xl font-bold text-deep-brown">
