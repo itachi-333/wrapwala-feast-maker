@@ -1,6 +1,6 @@
 export default function PullQuote() {
   return (
-    <section className="bg-rust py-16 px-4 relative overflow-hidden">
+    <section className="gradient-rust py-16 px-4 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-40 h-40 bg-gold rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-60 h-60 bg-deep-brown rounded-full blur-3xl" />

@@ -9,6 +9,7 @@ import FullMenu from '@/components/wrapwala/FullMenu';
 import FindUs from '@/components/wrapwala/FindUs';
 import Reviews from '@/components/wrapwala/Reviews';
 import FeedbackForm from '@/components/wrapwala/FeedbackForm';
+import Subscribe from '@/components/wrapwala/Subscribe';
 import Footer from '@/components/wrapwala/Footer';
 
 const Index = () => {
@@ -25,6 +26,7 @@ const Index = () => {
       <FindUs />
       <Reviews />
       <FeedbackForm />
+      <Subscribe />
       <Footer />
     </>
   );

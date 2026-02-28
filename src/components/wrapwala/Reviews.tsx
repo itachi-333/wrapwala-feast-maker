@@ -3,9 +3,9 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 const reviews = [
   { name: 'Gnana Vardhan', location: 'East London · Google', text: 'The OG Paneer Tikka Wrap is genuinely one of the best things I\'ve eaten on a London street. The spice balance, the freshness, the crunch — absolutely unmatched. I\'m a regular now and I don\'t see that changing anytime soon.', featured: true },
   { name: 'Karthik Singh', location: 'Southall · Instagram', text: 'The Butter Bliss wrap tastes like my mum\'s butter chicken but in a wrap. Pure comfort food with bold Punjabi flavours.' },
-  { name: 'Thrisha', location: 'Camden · Google', text: 'As a vegetarian, I\'m always let down by street food — but WrapWala has SO many options. The Chilli Paneer and Falafel are incredible.' },
+  { name: 'Thrisha', location: 'Camden · Google', text: 'As a vegetarian, I\'m always let down by street food — but WrapWala has SO many options. The Chilli Paneer and Falafel Wrap are incredible.' },
   { name: 'Omar Abdullah', location: 'Whitechapel · TripAdvisor', text: 'The Chilli Paneer wrap is seriously addictive. Perfect blend of Indo-Chinese heat and freshness.' },
-  { name: 'Sophie Williams', location: 'Shoreditch · Google', text: 'The Falafel Special with a side of Masala Fries is my go-to Friday lunch. Fresh, filling, and SO flavourful.' },
+  { name: 'Sophie Williams', location: 'Shoreditch · Google', text: 'The Falafel Wrap with a side of Masala Fries is my go-to Friday lunch. Fresh, filling, and SO flavourful.' },
   { name: 'Emily Clarke', location: 'Brixton · Instagram', text: 'Tried the Quarter Pounder with Masala Fries on a whim — now I\'m obsessed. Best street burger in London, hands down.' },
 ];
 
@@ -20,7 +20,7 @@ export default function Reviews() {
   const ref = useScrollReveal();
 
   return (
-    <section id="reviews" className="py-20 bg-dark-surface">
+    <section id="reviews" className="py-20 bg-deep-brown">
       <div className="max-w-7xl mx-auto px-4" ref={ref}>
         <div className="text-center mb-12 reveal-item">
           <span className="text-gold font-script text-lg">Testimonials</span>

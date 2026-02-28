@@ -5,14 +5,17 @@ const topPicks = ['OG Paneer Tikka', 'Chilli Paneer', 'Butter Bliss', 'Peri Peri
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-surface pt-16 pb-8 border-t border-warm-cream/5">
+    <footer className="bg-deep-brown pt-16 pb-8 border-t border-warm-cream/5">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <img src={logo} alt="WrapWala" className="w-12 h-12 rounded-full object-cover border-2 border-gold/30" />
-              <span className="font-display text-xl font-bold text-warm-cream">WrapWala</span>
+              <img src={logo} alt="WrapWala" className="h-14 w-auto object-contain" />
+              <div>
+                <span className="font-display text-xl font-bold text-warm-cream block">WrapWala</span>
+                <span className="text-xs text-gold font-body">Fast · Fresh · Flavourful</span>
+              </div>
             </div>
             <p className="text-warm-cream/40 text-sm leading-relaxed">
               London's favourite Indian-inspired street food. Bold flavours, fresh ingredients, rolled with love.
