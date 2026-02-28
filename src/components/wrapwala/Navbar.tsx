@@ -26,8 +26,8 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-body ${
           scrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-lg py-2'
-            : 'bg-white/80 backdrop-blur-sm py-4'
+  ? 'bg-white/95 backdrop-blur-md shadow-md py-2'
+  : 'bg-white/90 backdrop-blur-sm py-2'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between">
@@ -35,13 +35,13 @@ export default function Navbar() {
             <img 
               src={logo} 
               alt="WrapWala logo" 
-              className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+              className="h-14 md:h-16 lg:h-18 w-auto object-contain"
             />
             <div className="flex flex-col">
               <span className="font-display text-xl md:text-2xl font-bold text-deep-brown">
                 WrapWala
               </span>
-              <span className="text-xs md:text-sm font-body text-gold font-medium tracking-wide">
+             <span className="text-xs md:text-sm font-body text-orange-600 font-semibold tracking-wide">
                 Fast · Fresh · Flavourful
               </span>
             </div>
